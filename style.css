@@ -1,0 +1,138 @@
+body{
+    color: white;
+    background-color: #1b2838;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+li {
+    float: left;
+    display: block;
+    padding: 8px;
+    background-color: #171d25;
+}
+#Status{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    margin: 0;
+    color:#2e5281;
+}
+
+.jeu{
+    height: auto;
+    background-color: #1b2838;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.carrousel{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.fleche{
+    width: 30px;
+    height: auto;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 5px;
+}
+.info p{
+    margin: 0;
+    margin-top: 5px;
+}
+.image{
+    width: 50%;
+    height: auto;
+}
+.bouton{
+    width: 50%;
+}
+#ajouterPanier{
+    float: right;
+    margin-top: 5px;
+    background-color: #2e5281;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 10px;
+}
+
+#div2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 15%;
+}
+#nouveauCompte{
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+#choixJeux{
+    margin: 0;
+    margin-top: 5px;
+}
+
+#clientProfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 5%;
+}
+#deconnexion{
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    margin-top: 15px;
+}
+tbody{
+    width: 100%;
+}
+table, td, th{
+    border:1px solid white
+}
+
+#formAjouterJeux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 5%;
+}
+#formSupprimerJeux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 5%;
+}
+

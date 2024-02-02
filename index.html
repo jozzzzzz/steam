@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script type="module" src="index.js"></script>
+    <div class="Menu">
+        <ul>
+            <li id="Jeu">Jeu</li>
+            <li id="Connection">Profil</li>
+            <li id="AjouterJeu">Ajouter un jeu</li>
+            <li id="SupprimerJeu">Supprimer un jeu</li>
+        </ul>
+        <p id="Status">Non Connecté</p>
+    </div>
+    <div id="div1">
+        <div class="jeu" id="num" name="0">
+            <h2 id="nomJeu"></h2>
+            <div class="carrousel">
+                <img src="https://cdn.discordapp.com/attachments/973981775984480326/1159137635474870292/image.png?ex=651eca8c&is=651d790c&hm=799c2f7a970ee2c8674762aaf88b81f137f217633f37377a91a34ca8e715a3e4&" alt="fleche du carousel" class="fleche" id="flecheDroite">
+                <img src="https://www.zendevs.xyz/wp-content/uploads/2018/10/lazy-loading.png" alt="image du jeu" class="image" id="imageJeu">
+                <img src="https://cdn.discordapp.com/attachments/973981775984480326/1159138090447814686/image.png?ex=651ecaf8&is=651d7978&hm=f2d2a3c91b181610cdb339ab8d934a04ef1323f2270fbd1e074d3360c76a7853&" alt="fleche du carousel" class="fleche" id="flecheGauche">
+            </div>
+            <div class="info">
+                <p id="genreJeu">Loading</p>
+                <p id="prixJeu">Loading</p>
+                <p id="stockJeu">Stock: Loading</p>
+            </div>
+            <div class="bouton">
+                <button id="ajouterPanier">Ajouter au panier</button>
+            </div>             
+        </div>
+    </div>
+    <div id="div2">
+        <div id="form">
+            <input type="button" value="Créer un compte" id="nouveauCompte">
+            <form action="" name="formConnexion">
+                <label for="pseudo">Pseudo</label>
+                <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo"><br/>
+
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp" placeholder="Mot de passe"><br/>
+
+                <input type="submit" value="Connexion">
+            </form>
+        </div>
+        <div id="creerCompte">
+            <form action="" name="formCreerCompte">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom" id="nom" placeholder="Nom"><br/>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" name="prenom" id="prenom" placeholder="Prénom"><br/>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email"><br/>
+
+                <label for="pseudo2">Pseudo</label>
+                <input type="text" name="pseudo2" id="pseudo2" placeholder="Pseudo"><br/>
+
+                <label for="mdp2">Mot de passe</label>
+                <input type="input" name="mdp2" id="mdp2" placeholder="Mot de passe"><br/>
+
+                <label>Jeux</label>
+                <div id="choixJeux">
+                </div>
+
+                <input type="submit" value="Créer un compte" id="submitDisabled">
+            </form>
+        </div>
+        <div id="profil">
+            <div id="clientProfil"></div>
+            <table class="tableauJeux" id="tableauJeux">
+            </table>
+            <input type="button" value="Déconnexion" id="deconnexion">
+            <input type="button" value="Supprimer mon compte" id="supprimerCompte">
+        </div>
+    </div> 
+    <div id="div3">
+        <form id="formAjouterJeux">
+            <label for="nomJeu2">Nom du jeu</label>
+            <input type="text" name="nomJeu2" id="nomJeu2" placeholder="Nom du jeu"><br/>
+
+            <label for="genreJeu2">Genre du jeu</label>
+            <input type="text" name="genreJeu2" id="genreJeu2" placeholder="Genre du jeu"><br/>
+
+            <label for="prixJeu2">Prix du jeu</label>
+            <input type="number" name="prixJeu2" id="prixJeu2" placeholder="Prix du jeu"><br/>
+
+            <label for="stockJeu2">Stock du jeu</label>
+            <input type="number" name="stockJeu2" id="stockJeu2" placeholder="Stock du jeu"><br/>
+
+            <label for="imageJeu2">Photo</label>
+            <input type="text" name="imageJeu2" id="imageJeu2" placeholder="Lien image du jeu"><br/>
+
+            <input type="submit" value="Ajouter le jeu">
+        </form>
+        <table class="tableauJeux" id="tableauJeux2">
+        </table>
+    </div> 
+    <div id="div4">
+        <form id="formSupprimerJeux">
+            <label for="nomJeu3">Nom du jeu</label>
+            <input type="text" name="nomJeu3" id="nomJeu3" placeholder="Nom du jeu"><br/>
+
+            <input type="submit" value="Supprimer le jeu">
+        </form>
+        <table class="tableauJeux" id="tableauJeux3">
+            <tr>
+                <th>Nom</th>
+                <th>Genre</th>
+                <th>Prix</th>
+                <th>Stock</th>
+            </tr>
+            <tr id="tableId0">
+                <td name="nom"></td>
+                <td name="genre"></td>
+                <td name="prix"></td>
+                <td name="stock"></td>
+            </tr>
+            <tr id="tableId1">
+                <td name="nom"></td>
+                <td name="genre"></td>
+                <td name="prix"></td>
+                <td name="stock"></td>
+            </tr>
+            <tr id="tableId2">
+                <td name="nom"></td>
+                <td name="genre"></td>
+                <td name="prix"></td>
+                <td name="stock"></td>
+            </tr>
+            <tr id="tableId3">
+                <td name="nom"></td>
+                <td name="genre"></td>
+                <td name="prix"></td>
+                <td name="stock"></td>
+            </tr>
+            <tr id="tableId4">
+                <td name="nom"></td>
+                <td name="genre"></td>
+                <td name="prix"></td>
+                <td name="stock"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
